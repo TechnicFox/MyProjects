@@ -7,7 +7,6 @@ clock = pygame.time.Clock()
 pygame.init()
 
 window = pygame.display.set_mode((500,500))
-window.fill('white')
 pygame.display.set_caption('FPS 60')
 
 # pygame.draw.rect(window,(255,255,0),(10,10,50,200),10)
@@ -24,26 +23,21 @@ pygame.display.flip()
 # pygame.draw.circle(window,'red',(200,250),50)
 # pygame.draw.circle(window,'blue',(300,250),50)
 
-polygon1 = pygame.Surface((104, 154))
-pygame.Surface.fill(polygon1,'white')
+# polygon1 = pygame.Surface((104, 154))
+
+# pygame.draw.polygon(polygon1,'white',[(52,152),(2,77),(52,2),(102,77)],5)
+
+# rotated_polygon = pygame.transform.rotate(polygon1, 57)
+# rotated_polygon2 = pygame.transform.rotate(polygon1, -57)
+# window.blit(rotated_polygon2, (95, 205))
+# window.blit(rotated_polygon, (220, 205))
 
 
-pygame.draw.polygon(polygon1,'black',[(52,152),(2,77),(52,2),(102,77)],5)
+# pygame.draw.polygon(window,'white',[(250,250),(200,175),(250,100),(300,175)],5)
+# pygame.draw.line(window,'white',(250,249),(200,249),4)
+# pygame.draw.line(window,'white',(250,249),(215,330),4)
+# pygame.display.flip()
 
 
 
-rotated_polygon = pygame.transform.rotate(polygon1, 57)
-rotated_polygon2 = pygame.transform.rotate(polygon1, -57)
-
-window.blit(rotated_polygon, (220, 205))
-window.blit(rotated_polygon2, (95, 205))
-
-pygame.draw.polygon(window,'black',[(250,250),(200,175),(250,100),(300,175)],5)
-pygame.display.flip()
-
-
-while True:
-    for i in pygame.event.get():
-        if i.type == pygame.QUIT:
-           sys.exit() 
-    clock.tick(FPS)
+# 
