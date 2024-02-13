@@ -18,9 +18,9 @@ pygame.init()
 window = pygame.display.set_mode(resolution)
 pygame.display.set_caption('Catch')
 
-background = pygame.transform.scale(pygame.image.load('image/background.png'),resolution)
-sprite1 = pygame.transform.scale(pygame.image.load('image/sprite1.png'),(100,100))
-sprite2 = pygame.transform.scale(pygame.image.load('image/sprite2.png'),(100,100))
+background = pygame.transform.scale(pygame.image.load('images/background.png'),resolution)
+sprite1 = pygame.transform.scale(pygame.image.load('images/sprite1.png'),(100,100))
+sprite2 = pygame.transform.scale(pygame.image.load('images/sprite2.png'),(100,100))
 
 x1 = 250
 y1 = 250
