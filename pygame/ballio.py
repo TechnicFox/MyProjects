@@ -1,6 +1,7 @@
 import pygame
 import sys
 import random
+
 pygame.init()
 
 resolution = (700,500)
@@ -19,11 +20,11 @@ blue = (0,0,255)
 window = pygame.display.set_mode(resolution)
 
 pygame.display.set_caption('Ball.io')
-food_radius = 10
+food_radius = 20
 def spawn_food():
     return random.randint(food_radius,resolution[0]-food_radius-100),random.randint(food_radius,resolution[1]-food_radius-100)
 
-player_radius = 200
+player_radius = 50
 
 player_x = resolution[0]//2
 player_y = resolution[1]//2
@@ -62,7 +63,7 @@ while True:
         food_x = spawn_food()[0]
         food_y= spawn_food()[1]
         score+=1
-        player_radius+=1
+        player_radius+=5
     
     
     pygame.display.update()
